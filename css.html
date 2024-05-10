@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <head>
   <style>
-    section {
+
+    .lastdiv{
+    display: flex;
+    gap: 30px;
+    height: 200px;
+    width: 200px;
+    background-color: snow;
+
+  }
+    .image2 {
       margin-right: 50%;
       border-color: black;
       border-right: solid black;
       /* height: 50%;
       width: 50%; */
       background-color: burlywood;
+      padding: 0.3rem;
+
     }
+    /* #title{
+      padding: 0.3rem;
+    } */
     .div3 {
       border-top: solid 3px black;
       border-bottom: solid 3px black;
       word-wrap: break-word;
       height: 200px;
-      overflow: hidden;
       overflow: auto;
       background-color: aqua;
       border-color: black;
@@ -26,7 +39,7 @@
       overflow: hidden;
       display: inline-flex;
       padding: 1px;
-      margin: 10px;
+      /* margin: 10px; */
     }
     p {
       word-wrap: break-word;
@@ -39,19 +52,42 @@
       overflow: hidden;
       display: inline-flex;
       padding: 1px;
-      margin: 10px;
+      /* margin: 10px; */
     }
     p {
       word-wrap: break-word;
     }
-
-    td {
+.td1{
+  text-align: center;
+  box-shadow: 1px 1px gray;
+  border: 1px solid palegoldenrod;
+  width: 50px;
+  height: 50px;
+}
+    .td0 {
+      
       display: inline-block;
       margin: 5px;
       border: 1px solid black;
       box-shadow: 6px 3px gray;
       padding: 10px;
       border-radius: 10px;
+    }
+    .task1{
+text-decoration: underline;
+
+
+    }
+    hr{
+      width: 55%;
+    float:left;
+    }
+    #lastList{
+      list-style: none;
+    }
+    .tablePart2{
+      float: right;
+    
     }
   </style>
 </head>
@@ -60,19 +96,19 @@
 
   <table>
     <tr>
-      <td>cccc</td>
-      <td>cccc</td>
-      <td>cccc</td>
+      <td class="td0">cccc</td>
+      <td class="td0">cccc</td>
+      <td class="td0">cccc</td>
     </tr>
     <tr>
-      <td>cccc</td>
-      <td>cccc</td>
-      <td>cccc</td>
+      <td class="td0">cccc</td>
+      <td class="td0">cccc</td>
+      <td class="td0">cccc</td>
     </tr>
   </table>
   <br /><br />
-  <section>
-    <p><b>Floating </b></p>
+  <section class="image2">
+    <h2 id="title"><b>Floating articles</b></h2>
     <div class="div1">
       <p>
         There are many variations of passages of Lorem IpWhere can I get some?
@@ -279,7 +315,6 @@
         humour, or non-characteristic words etc.
       </p>
     </div>
-    <br /><br />
     <div class="div3">
       <p>
         Where can I get some? There are many variations of passages of Lorem
@@ -491,4 +526,69 @@
       </p>
     </div>
   </section>
+
+  <section class="image3">
+    <h1 class="task1">Have Fun while Styling!</h1>
+    <hr><br>
+    <h2><P>Heres a text <a href="https://google.com">with a link</a>. lets do it!</h2>
+    <h2>We have more <a href="https://google.com">Links</a> here :</h2>
+    <h2>Is this a (<mark><a href="https://google.com">Link?</a></mark>)</h2>
+    <h2>We have a list</h2>
+    <ul>
+    <li><h2>Please,<a href="https://google.com">Click me!</a></h2></li>
+    </ul>
+    <h2></h2><ul>
+    <li><B>Can you ? Let's count</B></li>
+    <ul style="color: blue;">
+    <li><b>111</b></li>
+    <li>222 <A href="https://google.com">Another link</A></li>
+    <li>333</li>
+    <ul id="lastList">
+    <li><b>111</b></li>
+    <li>333</li>
+    <li>222 <A href="https://google.com">Another link</A></li>
+    </ul>
+    </ul>
+    </section>
+    <h2>
+    <ul>
+    <li>Thats enough !</li>
+    </ul>
+    </h2>
+    <div class="lastdiv">
+    <table class="tablePart1">
+    <tr>
+    <td class="td1">1</td>
+    </tr>
+    <tr>
+    <td class="td1">2</td> 
+    <td class="td1">3</td>
+    </tr>
+    <tr>
+    <td class="td1">4</td>
+    <td class="td1">5</td>
+    </tr>
+    <tr>
+    <td class="td1">6</td> 
+    <td class="td1">7</td>
+    </tr>
+    </table>
+    <table class="tablePart2">
+    <tr>
+    <td class="td1">1</td>
+    </tr>
+    <tr>
+    <td class="td1">2</td> 
+    <td class="td1">3</td>
+    </tr>
+    <tr>
+    <td class="td1">4</td>
+    <td class="td1">5</td>
+    </tr>
+    <tr>
+    <td class="td1">6</td> 
+    <td class="td1">7</td>
+    </tr>
+    </table>
+    </div>
 </body>
